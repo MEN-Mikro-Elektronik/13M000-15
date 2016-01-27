@@ -1,0 +1,471 @@
+<html>
+<head>
+<title>F2 driver</title>
+<style type=text/css>
+    Body { background-color: #ffffff; }
+    A:link { color: #c50038; }
+    A:hover { color: #28669b; }
+    P, H1, H2, H3, H3, H5, LI {
+        color: #434343;
+        font-family: Arial, Helvetica, Univers;
+    }
+    P, LI { font-size: 9.000000pt; }
+</style>
+</head>
+<body>
+<h1>F2 driver</h1>
+<p>Fri Jun  9 14:10:08  2000</p>
+<h2>Overview of all Functions</h2>
+<a name="chapt0"><a href="#intro0"><h3>F2 board handler routines</h3></a>
+<TABLE border=1>
+<TR><TD><P><B>Function</B></P></TD><TD><P><B>Description</B></P></TD></TR>
+
+<TR><TD><P><a href="#F2_GetEntry">F2_GetEntry</a></P></TD><TD><P>Initialize drivers jump table. </P></TD></TR>
+<TR><TD><P><a href="#F2_Init">F2_Init</a></P></TD><TD><P>Allocate and return board handle. </P></TD></TR>
+<TR><TD><P><a href="#F2_BrdInit">F2_BrdInit</a></P></TD><TD><P>Board initialization. </P></TD></TR>
+<TR><TD><P><a href="#F2_BrdExit">F2_BrdExit</a></P></TD><TD><P>Board deinitialization. </P></TD></TR>
+<TR><TD><P><a href="#F2_Exit">F2_Exit</a></P></TD><TD><P>Cleanup memory. </P></TD></TR>
+<TR><TD><P><a href="#F2_BrdInfo">F2_BrdInfo</a></P></TD><TD><P>Get information about hardware and driver requirements. </P></TD></TR>
+<TR><TD><P><a href="#F2_CfgInfo">F2_CfgInfo</a></P></TD><TD><P>Get information about board configuration. </P></TD></TR>
+<TR><TD><P><a href="#F2_IrqEnable">F2_IrqEnable</a></P></TD><TD><P>Interrupt enable / disable. </P></TD></TR>
+<TR><TD><P><a href="#F2_IrqSrvInit">F2_IrqSrvInit</a></P></TD><TD><P>Called at the beginning of an interrupt. </P></TD></TR>
+<TR><TD><P><a href="#F2_IrqSrvExit">F2_IrqSrvExit</a></P></TD><TD><P>Called at the end of an interrupt. </P></TD></TR>
+<TR><TD><P><a href="#F2_ExpEnable">F2_ExpEnable</a></P></TD><TD><P>Exception interrupt enable / disable. </P></TD></TR>
+<TR><TD><P><a href="#F2_ExpSrv">F2_ExpSrv</a></P></TD><TD><P>Called at the beginning of an exception interrupt. </P></TD></TR>
+<TR><TD><P><a href="#F2_SetMIface">F2_SetMIface</a></P></TD><TD><P>Set device interface. </P></TD></TR>
+<TR><TD><P><a href="#F2_ClrMIface">F2_ClrMIface</a></P></TD><TD><P>Clear device interface. </P></TD></TR>
+<TR><TD><P><a href="#F2_GetMAddr">F2_GetMAddr</a></P></TD><TD><P>Get physical address description. </P></TD></TR>
+<TR><TD><P><a href="#F2_SetStat">F2_SetStat</a></P></TD><TD><P>Set driver status </P></TD></TR>
+<TR><TD><P><a href="#F2_GetStat">F2_GetStat</a></P></TD><TD><P>Get driver status </P></TD></TR>
+</TABLE>
+ 
+<a name="intro0"><h1>F2 board handler routines </h1></a>
+<pre>
+The F2 supports several onboard-devices:
+- The onboard-devices corresponds to ISA or PCI devices.
+- The onboard-device uses the following resources:
+
+slot   | device (function)          | bus | resources
+-------+----------------------------+-----+--------------
+0x1000 | Z8536                      |     |
+       |  (Watchdog, SMB-Ctr, Trig) | ISA | io space, IRQ
+       | LM79                       |     |
+       |  (Systemmonitor)           | ISA | IRQ
+0x1001 | ALI M1543C                 |     |
+       |  (User-LEDs, GPIOs)        | PCI | cfg space
+
+Note:
+The F2 board handler also access the FDC37C669 ISA device
+to do some interrupt configurations.
+
+Required: ---
+Switches: _ONE_NAMESPACE_PER_DRIVER_, F2
+
+</pre>
+<a name="F2_GetEntry"><h2>Function F2_GetEntry()</h2></a>
+
+<h3>Syntax</h3>
+<pre>#ifdef _ONE_NAMESPACE_PER_DRIVER_
+    extern void BBIS_GetEntry( BBIS_ENTRY *bbisP )
+#else
+# ifdef F2 
+    extern void F2_GetEntry( BBIS_ENTRY *bbisP )
+# endif
+#endif
+</pre><h3>Description</h3>
+<pre>Initialize drivers jump table.
+
+</pre><h3>Input</h3>
+<pre>bbisP     pointer to the not initialized structure
+</pre><h3>Output</h3>
+<pre>*bbisP    initialized structure
+</pre>
+<a name="F2_Init"><h2>Function F2_Init()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_Init(
+    OSS_HANDLE      *osHdl,
+    DESC_SPEC       *descSpec,
+    BBIS_HANDLE     **brdHdlP )
+</pre><h3>Description</h3>
+<pre>Allocate and return board handle.
+
+- initializes the board handle
+- reads and saves board descriptor entries
+- assign resources
+- map used addresses
+
+The following descriptor keys are used:
+
+Deskriptor key           Default          Range
+-----------------------  ---------------  -------------
+DEBUG_LEVEL_DESC         OSS_DBG_DEFAULT  see dbg.h
+DEBUG_LEVEL              OSS_DBG_DEFAULT  see dbg.h
+IRQ_CIO_LM               BIOS setting     0,5,7,9,10,11,12
+IRQ_COM3                 BIOS setting     0,5,7,9,10,11,12
+IRQ_COM4                 BIOS setting     0,5,7,9,10,11,12
+
+IRQ_.. specifies optionally the IRQ that will be used for
+the Z8536/LM79 device, COM3 port and COM4 port. If IRQ_..
+is present, the IRQ setting from the BIOS will be
+overwritten - otherwise the BIOS mapping will be used. 
+If IRQ_..=0 no IRQ will be assigned.
+
+Note: The current F2 BIOS doesn't assign any IRQ to the
+      Z8536/LM79 device. Therefor IRQ_CIO_LM must be
+      specified to provide an IRQ for the device slot 0x1000.
+
+      Furthermore, the current BIOS doesn't assign the proper
+      IRQ for COM3/COM4 specified in the BIOS setup. Therefore
+      it is recommended to specify IRQ_COM3/4 to select the
+      proper IRQs.
+
+</pre><h3>Input</h3>
+<pre>osHdl     pointer to os specific structure             
+descSpec  pointer to os specific descriptor specifier  
+brdHdlP   pointer to not initialized board handle structure            
+</pre><h3>Output</h3>
+<pre>*brdHdlP  initialized board handle structure  
+return    0 | error code
+</pre>
+<a name="F2_BrdInit"><h2>Function F2_BrdInit()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_BrdInit(
+    BBIS_HANDLE     *brdHdl )
+</pre><h3>Description</h3>
+<pre>Board initialization.
+
+Perform IRQ setting in the FDC37C669 ISA device. 
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure    
+</pre><h3>Output</h3>
+<pre>return    0 | error code
+</pre>
+<a name="F2_BrdExit"><h2>Function F2_BrdExit()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_BrdExit(
+    BBIS_HANDLE     *brdHdl )
+</pre><h3>Description</h3>
+<pre>Board deinitialization.
+
+Do nothing
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure   
+</pre><h3>Output</h3>
+<pre>return    0 | error code
+</pre>
+<a name="F2_Exit"><h2>Function F2_Exit()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_Exit(
+    BBIS_HANDLE     **brdHdlP )
+</pre><h3>Description</h3>
+<pre>Cleanup memory.
+
+- deinitializes the bbis handle
+
+</pre><h3>Input</h3>
+<pre>brdHdlP   pointer to board handle structure
+</pre><h3>Output</h3>
+<pre>*brdHdlP  NULL
+return    0 | error code
+</pre>
+<a name="F2_BrdInfo"><h2>Function F2_BrdInfo()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_BrdInfo(
+    u_int32 code,
+    ... )
+</pre><h3>Description</h3>
+<pre>Get information about hardware and driver requirements.
+
+Following info codes are supported:
+
+Code                      Description
+------------------------  -----------------------------
+BBIS_BRDINFO_BUSTYPE      board bustype
+BBIS_BRDINFO_DEVBUSTYPE   device bustype
+BBIS_BRDINFO_FUNCTION     used optional functions
+BBIS_BRDINFO_NUM_SLOTS    number of slots
+BBIS_BRDINFO_INTERRUPTS   interrupt characteristics
+BBIS_BRDINFO_ADDRSPACE    address characteristic
+
+The BBIS_BRDINFO_BUSTYPE code returns the bustype of
+the specified board.
+
+The BBIS_BRDINFO_DEVBUSTYPE code returns the bustype of
+the specified device - not the board bus type. 
+
+The BBIS_BRDINFO_FUNCTION code returns the information
+if an optional BBIS function is supported or not.
+
+The BBIS_BRDINFO_NUM_SLOTS code returns the number of
+devices used from the driver.
+
+The BBIS_BRDINFO_INTERRUPTS code returns the supported
+interrupt capability (BBIS_IRQ_DEVIRQ/BBIS_IRQ_EXPIRQ)
+of the specified device.
+
+The BBIS_BRDINFO_ADDRSPACE code returns the address
+characteristic (OSS_ADDRSPACE_MEM/OSS_ADDRSPACE_IO)
+of the specified device.
+
+</pre><h3>Input</h3>
+<pre>code      reference to the information we need    
+...       variable arguments                      
+</pre><h3>Output</h3>
+<pre>*...      variable arguments
+return    0 | error code
+</pre>
+<a name="F2_CfgInfo"><h2>Function F2_CfgInfo()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_CfgInfo(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         code,
+    ... )
+</pre><h3>Description</h3>
+<pre>Get information about board configuration.
+
+Following info codes are supported:
+
+Code                      Description
+------------------------  ------------------------------
+BBIS_CFGINFO_BUSNBR       bus number
+BBIS_CFGINFO_IRQ          interrupt parameters
+BBIS_CFGINFO_EXP          exception interrupt parameters
+BBIS_CFGINFO_PCI_DEVNBR   pci device number
+
+The BBIS_CFGINFO_BUSNBR code returns the number of the
+bus on which the board resides.
+
+The BBIS_CFGINFO_IRQ code returns the device interrupt
+vector, level and mode of the specified device.
+
+The BBIS_CFGINFO_EXP code returns the exception interrupt
+vector, level and mode of the specified device.
+
+The BBIS_CFGINFO_PCI_DEVNBR code are only used for pci
+devices and returns the PCI device number of the specified
+device.
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure       
+code      reference to the information we need    
+...       variable arguments                      
+</pre><h3>Output</h3>
+<pre>.....:  ...       variable arguments
+        return    0 | error code
+</pre>
+<a name="F2_IrqEnable"><h2>Function F2_IrqEnable()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_IrqEnable(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot,
+    u_int32         enable )
+</pre><h3>Description</h3>
+<pre>Interrupt enable / disable.
+
+Do nothing
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure   
+mSlot     module slot number                  
+enable    interrupt setting                   
+</pre><h3>Output</h3>
+<pre>return    0
+</pre>
+<a name="F2_IrqSrvInit"><h2>Function F2_IrqSrvInit()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_IrqSrvInit(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot)
+</pre><h3>Description</h3>
+<pre>Called at the beginning of an interrupt.
+
+Do nothing
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure   
+mSlot     module slot number                  
+</pre><h3>Output</h3>
+<pre>return    BBIS_IRQ_UNK
+</pre>
+<a name="F2_IrqSrvExit"><h2>Function F2_IrqSrvExit()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static void F2_IrqSrvExit(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot )
+</pre><h3>Description</h3>
+<pre>Called at the end of an interrupt.
+
+Do nothing
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure   
+mSlot     module slot number                  
+</pre><h3>Output</h3>
+<pre>---
+</pre>
+<a name="F2_ExpEnable"><h2>Function F2_ExpEnable()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_ExpEnable(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot,
+    u_int32         enable)
+</pre><h3>Description</h3>
+<pre>Exception interrupt enable / disable.
+
+Do nothing
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure   
+mSlot     module slot number                  
+enable    interrupt setting                   
+</pre><h3>Output</h3>
+<pre>return    0
+</pre>
+<a name="F2_ExpSrv"><h2>Function F2_ExpSrv()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_ExpSrv(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot )
+</pre><h3>Description</h3>
+<pre>Called at the beginning of an exception interrupt.
+
+Do nothing
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure   
+mSlot     module slot number                  
+</pre><h3>Output</h3>
+<pre>return    BBIS_IRQ_NO
+</pre>
+<a name="F2_SetMIface"><h2>Function F2_SetMIface()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_SetMIface(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot,
+    u_int32         addrMode,
+    u_int32         dataMode)
+</pre><h3>Description</h3>
+<pre>Set device interface.
+
+Do nothing
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure   
+mSlot     module slot number                  
+addrMode  MDIS_MODE_A08 | MDIS_MODE_A24       
+dataMode  MDIS_MODE_F26 | MDIS_MODE_D32       
+</pre><h3>Output</h3>
+<pre>return    0
+</pre>
+<a name="F2_ClrMIface"><h2>Function F2_ClrMIface()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_ClrMIface(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot)
+</pre><h3>Description</h3>
+<pre>Clear device interface.
+
+Do nothing
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure   
+mSlot     module slot number                  
+</pre><h3>Output</h3>
+<pre>return    0
+</pre>
+<a name="F2_GetMAddr"><h2>Function F2_GetMAddr()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_GetMAddr(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot,
+    u_int32         addrMode,
+    u_int32         dataMode,
+    void            **mAddr,
+    u_int32         *mSize )
+</pre><h3>Description</h3>
+<pre>Get physical address description.
+
+- check device number
+- assign address spaces
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure   
+mSlot     module slot number                  
+addrMode  MDIS_MODE_A08 | MDIS_MODE_A24    
+dataMode  MDIS_MODE_F26 | MDIS_MODE_D32      
+mAddr     pointer to address space            
+mSize     size of address space               
+</pre><h3>Output</h3>
+<pre>return    0 | error code
+</pre>
+<a name="F2_SetStat"><h2>Function F2_SetStat()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_SetStat(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot,
+    int32           code,
+    int32           value )
+</pre><h3>Description</h3>
+<pre>Set driver status
+
+Following status codes are supported:
+
+Code                 Description                Values
+-------------------  -------------------------  ----------
+M_BB_DEBUG_LEVEL     board debug level          see dbg.h
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure           
+mSlot     module slot number                          
+code      setstat code                                
+value     setstat value or ptr to blocksetstat data   
+</pre><h3>Output</h3>
+<pre>return    0 | error code
+</pre>
+<a name="F2_GetStat"><h2>Function F2_GetStat()</h2></a>
+
+<h3>Syntax</h3>
+<pre>static int32 F2_GetStat(
+    BBIS_HANDLE     *brdHdl,
+    u_int32         mSlot,
+    int32           code,
+    int32           *valueP )
+</pre><h3>Description</h3>
+<pre>Get driver status
+
+Following status codes are supported:
+
+Code                 Description                Values
+-------------------  -------------------------  ----------
+M_BB_DEBUG_LEVEL     driver debug level         see dbg.h
+M_BB_IRQ_VECT        interrupt vector           0..max
+M_BB_IRQ_LEVEL       interrupt level            0..max
+M_BB_IRQ_PRIORITY    interrupt priority         0
+M_MK_BLK_REV_ID      ident function table ptr   -
+
+</pre><h3>Input</h3>
+<pre>brdHdl    pointer to board handle structure           
+mSlot     module slot number                          
+code      getstat code                                
+</pre><h3>Output</h3>
+<pre>valueP    getstat value or ptr to blockgetstat data
+return    0 | error code
+</pre></body>
+</html>

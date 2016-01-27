@@ -1,0 +1,18 @@
+@INCLUDE_PATH = $(MEN_DOXYGENTMPL)
+@INCLUDE = DoxyfileCommon
+
+PROJECT_NAME           = "MDIS for QNX"
+PROJECT_NUMBER         = "$(MEN_FILESET_REVISION)"
+INPUT                  = doc.h
+OUTPUT_DIRECTORY       = .
+EXTRACT_ALL            = NO
+EXTRACT_STATIC         = NO
+GENERATE_HTMLHELP      = YES
+WARNINGS               = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_IF_UNDOCUMENTED   = YES
+GENERATE_HTMLHELP      = YES
+PREDEFINED             = 
+TAGFILES               = 
+DISABLE_INDEX          = YES
+GENERATE_TAGFILE       = mdis_docs.tag

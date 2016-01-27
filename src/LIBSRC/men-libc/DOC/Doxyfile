@@ -1,0 +1,17 @@
+@INCLUDE_PATH = $(MEN_DOXYGENTMPL)
+@INCLUDE = DoxyfileCommon
+
+PROJECT_NAME           = "MEN C-library extensions for QNX6"
+PROJECT_NUMBER         = $(MEN_FILESET_REVISION)
+INPUT                  = ../../../INCLUDE/NATIVE/MEN/men_libc.h ..
+OUTPUT_DIRECTORY       = .
+EXTRACT_ALL            = NO
+EXTRACT_STATIC         = NO
+GENERATE_HTMLHELP      = YES
+WARNINGS               = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_IF_UNDOCUMENTED   = YES
+GENERATE_HTMLHELP      = YES
+
+GENERATE_TAGFILE       = men-clib.tag
+

@@ -1,0 +1,18 @@
+#*********************************************************************
+#       Author: Christian.Schuster@men.de
+#        $Date: 2010/10/05 11:28:05 $
+#    $Revision: 1.1 $
+#
+#  Description:
+#      File to indicate used MCVS version
+#
+#      When you see this file in the work or target directory
+#      the Fileset was checked in using MCVS 4.0 or higher and
+#      you are using an older version of MCVS, where this file
+#      is not ignored for "mcvs build" and "mcvs update -r".
+#
+#      It is only used for version identification of the .desc style
+#      in MCVS.
+#      No effects on work, ... should be seen.
+#
+#*********************************************************************

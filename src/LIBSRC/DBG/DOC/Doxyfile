@@ -1,0 +1,17 @@
+@INCLUDE_PATH = $(MEN_DOXYGENTMPL)
+@INCLUDE = DoxyfileCommon
+
+PROJECT_NAME           = "MDIS debug functions for QNX"
+PROJECT_NUMBER         = "$(MEN_FILESET_REVISION)"
+INPUT                  = .. $(MEN_NAT_INC)/MEN/dbg_os.h
+OUTPUT_DIRECTORY       = .
+EXTRACT_ALL            = NO
+EXTRACT_STATIC         = NO
+GENERATE_HTMLHELP      = YES
+WARNINGS               = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_IF_UNDOCUMENTED   = YES
+GENERATE_HTMLHELP      = YES
+PREDEFINED             = 
+
+GENERATE_TAGFILE       = qnx_dbg.tag

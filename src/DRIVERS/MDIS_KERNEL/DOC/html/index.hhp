@@ -1,0 +1,47 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=MDIS kernel for QNX
+
+[WINDOWS]
+main="MDIS kernel for QNX","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x387e,,,,,,,,0
+
+[FILES]
+index.html
+files.html
+mdis__mk_8h-source.html
+mk__intern_8h-source.html
+calls_8c.html
+close_8c.html
+ident_8c.html
+mdis__kernel_8c.html
+mk__intern_8h.html
+open_8c.html
+annotated.html
+functions.html
+functions_vars.html
+union__mk__data__t.html
+union__mk__return__t.html
+structIRQ__THREAD.html
+structLOCK__INFO.html
+structMDIS__CLOSE__DEVICE__DATA.html
+structMDIS__MSGHEADER.html
+structMDIS__NATDEV__RETURN.html
+structMDIS__OPEN__DEVICE__DATA.html
+structMDIS__OPEN__DEVICE__RETURN.html
+structMK__DEV.html
+structMK__DRV.html
+structMK__PATH.html
+structMK__THREAD.html
+structSPACE.html
+mdis_kernel_dummy.html
+globals.html
+globals_func.html
+globals_type.html
+globals_enum.html
+pages.html

@@ -1,0 +1,31 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=BBIS kernel library for QNX
+
+[WINDOWS]
+main="BBIS kernel library for QNX","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x387e,,,,,,,,0
+
+[FILES]
+index.html
+files.html
+bbis__bk_8h-source.html
+bk__intern_8h-source.html
+bbis__kernel_8c.html
+bk__ident_8c.html
+bk__intern_8h.html
+annotated.html
+functions.html
+functions_vars.html
+structBK__DEV.html
+structBK__DRV.html
+bbis_dummy.html
+globals.html
+globals_func.html
+globals_defs.html
+pages.html
