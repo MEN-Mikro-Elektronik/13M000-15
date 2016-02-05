@@ -1,5 +1,14 @@
 ===== [ History of fileset ART/13M000-15/13M000-15 ] =====
 
+-----[ Release-1.8 ]-----
+[ 2016-02-05 by gv ]
+R: 1: Unwanted FILESETS directory
+   2: No MDIS project example for G22
+   3: MDIS LL driver example M43 is outdated
+M: 1: Remove FILESETS directory
+   2: Add MDIS project for G22 with BMC driver configured
+   3: Remove M43 LL driver and change it for XM01BC LL driver
+
 -----[ Release-1.7 ]-----
 [ 2016-01-27 by gv ]
 R: G204 is not detected on QNX 6.5

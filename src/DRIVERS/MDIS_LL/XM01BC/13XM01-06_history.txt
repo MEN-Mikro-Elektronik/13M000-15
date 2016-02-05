@@ -1,0 +1,40 @@
+===== [ History of fileset ART/13XM01-06/13XM01-06 ] =====
+
+
+-----[ Revision 1.5 ]-----
+[ 2015-03-12 09:54:22 by ts ]
+xm01bc_drv.c
+R: operating hours displayed were only 8bit wide instead 16bit
+M: fixed GetStat OPHRS_CNT to use ReadWordData instead ReadByteData
+
+-----[ Revision 1.4 ]-----
+[ 2010-01-27 15:51:46 by dpfeuffer ]
+R: MDISWIZ supports new businterface SMBus
+M: 13xm0106.xml: bbslot/bbismodel changed to busif SMBus
+
+-----[ Revision 1.3 ]-----
+[ 2009-09-04 12:02:56 by MRoth ]
+R: Porting to MIDS5 (according porting guide rev. 0.7)
+M: added support for 64bit (MDIS_PATH, Set/GetStat prototypes)
+
+-----[ Revision 1.2 ]-----
+[ 2009-02-06 16:08:37 by MSoehnlein ]
+R:1. Added MM1/ XM2/ F19 Support
+  2. MDIS5 porting
+  3. MIPIOS
+M:1.a) added "Hardware ID" query
+    b) added "Number of Supervised Voltages" query
+    c) added "Number of Error Counters" query
+    d) added "RESET_IN Blocking Mode" query
+    e) increased number of error counters to 31
+    f) increased number of supervised voltages to 8
+    g) renamed Board Controller Interface (BCI) from XM01BCI to CPUBCI
+  2.a) changed parameter of XM01BC_SetStat() and XM01BC_GetStat()
+         from "int32 value" to "INT32_OR_64 value32_or_64"
+         and "int32 *valueP" to "INT32_OR_64 *value32_or_64P"
+  3.a) added MIPIOS error codes
+
+-----[ Revision 1.1 ]-----
+[ 2008-10-31 17:37:02 by MSoehnlein ]
+Initial Revision
+

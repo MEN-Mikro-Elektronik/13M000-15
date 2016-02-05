@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"	encoding="UTF-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
+	<name>13xm0106</name>
+	<description>MDIS5 XM1 driver package</description>
+	<date>2015-03-12</date>
+	<revision>1.5</revision>
+	<docroot>DRIVERS/MDIS_LL/XM01BC/DOC/html/index.html</docroot>
+	<!-- Models	-->
+	<modellist>
+		<model>
+			<hwname>XM01BC</hwname>
+			<description>board-controller on SMBus of XM1</description>
+			<devtype>MDIS</devtype>
+			<busif>SMBus</busif>
+			<settinglist>
+				<setting>
+					<name>SMB_BUSNBR</name>
+					<description>SMBus bus number</description>
+					<type>U_INT32</type>
+					<value>0</value>
+					<defaultvalue>0</defaultvalue>
+				</setting>
+				<setting hidden="true">
+					<name>SMB_DEVADDR</name>
+					<description>SMBus address of XM1BC</description>
+					<type>U_INT32</type>
+					<defaultvalue>0x9a</defaultvalue>
+				</setting>
+				<setting>
+					<name>POLL_PERIOD</name>
+					<description>poll period for voltage supervision</description>
+					<type>U_INT32</type>
+					<defaultvalue>500</defaultvalue>
+					<minvalue>50</minvalue>
+					<maxvalue>5000</maxvalue>
+				</setting>
+			</settinglist>
+		</model>
+	</modellist>
+	<!-- Global	software modules -->
+	<swmodulelist>
+		<swmodule swap="false">
+			<name>xm01bc</name>
+			<description>XM01BC Driver</description>
+			<type>Low Level Driver</type>
+			<makefilepath>XM01BC/DRIVER/COM/driver.mak</makefilepath>
+		</swmodule>
+		<swmodule>
+			<name>xm01bc_ctrl</name>
+			<description>Tool that controls the XM01BC PIC</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>XM01BC/TOOLS/XM01BC_CTRL/COM/program.mak</makefilepath>
+		</swmodule>
+		<swmodule>
+			<name>wdog_test</name>
+			<description>Test program for watchdog drivers</description>
+			<type>Common Tool</type>
+			<makefilepath>WDOG/WDOG_TEST/COM/program.mak</makefilepath>
+		</swmodule>
+		<swmodule>
+			<name>wdog_simp</name>
+			<description>Simple example program for watchdog drivers</description>
+			<type>Common Tool</type>
+			<makefilepath>WDOG/WDOG_SIMP/COM/program.mak</makefilepath>
+		</swmodule>
+	</swmodulelist>
+</package>

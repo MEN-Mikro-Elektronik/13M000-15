@@ -1,0 +1,727 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="__XM01BC_GetEntry"><param name="Name" value="__XM01BC_GetEntry"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a27"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a69"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="_NO_LL_HANDLE"><param name="Name" value="_NO_LL_HANDLE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a0"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="_XM01BC_GLOBNAME"><param name="Name" value="_XM01BC_GLOBNAME"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a67"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="ADDRSPACE_COUNT"><param name="Name" value="ADDRSPACE_COUNT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a3"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="ADDRSPACE_SIZE"><param name="Name" value="ADDRSPACE_SIZE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a4"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="AlarmHandler"><param name="Name" value="AlarmHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a21"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="alarmHdl"><param name="Name" value="alarmHdl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o16"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="BUS_IDLE_DELAY"><param name="Name" value="BUS_IDLE_DELAY"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a8"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="CH_BYTES"><param name="Name" value="CH_BYTES"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a1"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="Cleanup"><param name="Name" value="Cleanup"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a20"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="DBG_MYLEVEL"><param name="Name" value="DBG_MYLEVEL"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a5"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="dbgHdl"><param name="Name" value="dbgHdl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o6"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="dbgLevel"><param name="Name" value="dbgLevel"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o5"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="DBH"><param name="Name" value="DBH"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a6"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="descHdl"><param name="Name" value="descHdl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o3"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="fwRev"><param name="Name" value="fwRev"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o9"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="fwRevFirst"><param name="Name" value="fwRevFirst"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o10"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="G_Path"><param name="Name" value="G_Path"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a2"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="G_VoltCh"><param name="Name" value="G_VoltCh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a5"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="high"><param name="Name" value="high"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a4"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="hwVariant"><param name="Name" value="hwVariant"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o11"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="Ident"><param name="Name" value="Ident"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a19"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="idFuncTbl"><param name="Name" value="idFuncTbl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o4"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="INT32_OR_64"><param name="Name" value="INT32_OR_64"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a70"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="irqHdl"><param name="Name" value="irqHdl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o2"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html"><param name="Name" value="LL_HANDLE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o16"><param name="Name" value="alarmHdl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o6"><param name="Name" value="dbgHdl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o5"><param name="Name" value="dbgLevel"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o3"><param name="Name" value="descHdl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o9"><param name="Name" value="fwRev"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o10"><param name="Name" value="fwRevFirst"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o11"><param name="Name" value="hwVariant"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o4"><param name="Name" value="idFuncTbl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o2"><param name="Name" value="irqHdl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o0"><param name="Name" value="memAlloc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o13"><param name="Name" value="numErrCntrs"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o12"><param name="Name" value="numVoltages"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o1"><param name="Name" value="osHdl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o17"><param name="Name" value="pollPeriod"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o15"><param name="Name" value="sigHdl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o8"><param name="Name" value="smbAddr"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o7"><param name="Name" value="smbH"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o18"><param name="Name" value="voltSvState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o14"><param name="Name" value="wdStatus"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="low"><param name="Name" value="low"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a3"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="M_CH_PROFILE_WDOG"><param name="Name" value="M_CH_PROFILE_WDOG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a0"><param name="Name" value="wdog.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="main"><param name="Name" value="main"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__simp_8c.html#a2"><param name="Name" value="wdog_simp.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__test_8c.html#a2"><param name="Name" value="wdog_test.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a9"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="MAX_VOLT_CH"><param name="Name" value="MAX_VOLT_CH"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a1"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="MDIS_PATH"><param name="Name" value="MDIS_PATH"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a72"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="memAlloc"><param name="Name" value="memAlloc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o0"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="NONE"><param name="Name" value="NONE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a0"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="numErrCntrs"><param name="Name" value="numErrCntrs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o13"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="numVoltages"><param name="Name" value="numVoltages"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o12"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="osHdl"><param name="Name" value="osHdl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o1"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="pollPeriod"><param name="Name" value="pollPeriod"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o17"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="PrintError"><param name="Name" value="PrintError"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__simp_8c.html#a1"><param name="Name" value="wdog_simp.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="PrintMdisError"><param name="Name" value="PrintMdisError"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__test_8c.html#a1"><param name="Name" value="wdog_test.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a7"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="PrintUosError"><param name="Name" value="PrintUosError"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a8"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="sigHdl"><param name="Name" value="sigHdl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o15"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="SMB2_ERRMAP"><param name="Name" value="SMB2_ERRMAP"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a7"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="smbAddr"><param name="Name" value="smbAddr"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o8"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="smbH"><param name="Name" value="smbH"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o7"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="SMBusReadByteData"><param name="Name" value="SMBusReadByteData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a24"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="SMBusReadWordData"><param name="Name" value="SMBusReadWordData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a26"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="SMBusWriteByte"><param name="Name" value="SMBusWriteByte"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a22"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="SMBusWriteByteData"><param name="Name" value="SMBusWriteByteData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a23"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="SMBusWriteWordData"><param name="Name" value="SMBusWriteWordData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a25"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="U_INT32_OR_64"><param name="Name" value="U_INT32_OR_64"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a71"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="usage"><param name="Name" value="usage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__test_8c.html#a0"><param name="Name" value="wdog_test.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a6"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="USE_IRQ"><param name="Name" value="USE_IRQ"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a2"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="voltSvState"><param name="Name" value="voltSvState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o18"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="WATCHDOG_TIME"><param name="Name" value="WATCHDOG_TIME"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__simp_8c.html#a0"><param name="Name" value="wdog_simp.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html"><param name="Name" value="wdog.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a0"><param name="Name" value="M_CH_PROFILE_WDOG"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a6"><param name="Name" value="WDOG_SHOT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a1"><param name="Name" value="WDOG_START"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a5"><param name="Name" value="WDOG_STATUS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a3"><param name="Name" value="WDOG_STOP"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a4"><param name="Name" value="WDOG_TIME"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a2"><param name="Name" value="WDOG_TRIG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="WDOG_SHOT"><param name="Name" value="WDOG_SHOT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a6"><param name="Name" value="wdog.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__simp_8c.html"><param name="Name" value="wdog_simp.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__simp_8c.html#a2"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__simp_8c.html#a1"><param name="Name" value="PrintError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__simp_8c.html#a0"><param name="Name" value="WATCHDOG_TIME"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="WDOG_START"><param name="Name" value="WDOG_START"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a1"><param name="Name" value="wdog.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="WDOG_STATUS"><param name="Name" value="WDOG_STATUS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a5"><param name="Name" value="wdog.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="WDOG_STOP"><param name="Name" value="WDOG_STOP"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a3"><param name="Name" value="wdog.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__test_8c.html"><param name="Name" value="wdog_test.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__test_8c.html#a2"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__test_8c.html#a1"><param name="Name" value="PrintMdisError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog__test_8c.html#a0"><param name="Name" value="usage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="WDOG_TIME"><param name="Name" value="WDOG_TIME"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a4"><param name="Name" value="wdog.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="WDOG_TRIG"><param name="Name" value="WDOG_TRIG"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="wdog_8h.html#a2"><param name="Name" value="wdog.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="wdStatus"><param name="Name" value="wdStatus"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#o14"><param name="Name" value="LL_HANDLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ATX_PWR_OK_MODE"><param name="Name" value="XM01BC_ATX_PWR_OK_MODE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a32"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_BLK_FWREV"><param name="Name" value="XM01BC_BLK_FWREV"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a55"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_BLK_FWREV_EXT"><param name="Name" value="XM01BC_BLK_FWREV_EXT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a56"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_BLK_FWREV_SIZE"><param name="Name" value="XM01BC_BLK_FWREV_SIZE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a65"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_BlockRead"><param name="Name" value="XM01BC_BlockRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a15"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_BlockWrite"><param name="Name" value="XM01BC_BlockWrite"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a16"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html"><param name="Name" value="xm01bc_ctrl.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a2"><param name="Name" value="G_Path"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a5"><param name="Name" value="G_VoltCh"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a4"><param name="Name" value="high"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a3"><param name="Name" value="low"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a9"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a1"><param name="Name" value="MAX_VOLT_CH"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a0"><param name="Name" value="NONE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a7"><param name="Name" value="PrintMdisError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a8"><param name="Name" value="PrintUosError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__ctrl_8c.html#a6"><param name="Name" value="usage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a27"><param name="Name" value="__XM01BC_GetEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a0"><param name="Name" value="_NO_LL_HANDLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a3"><param name="Name" value="ADDRSPACE_COUNT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a4"><param name="Name" value="ADDRSPACE_SIZE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a21"><param name="Name" value="AlarmHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a8"><param name="Name" value="BUS_IDLE_DELAY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a1"><param name="Name" value="CH_BYTES"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a20"><param name="Name" value="Cleanup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a5"><param name="Name" value="DBG_MYLEVEL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a6"><param name="Name" value="DBH"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a19"><param name="Name" value="Ident"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a7"><param name="Name" value="SMB2_ERRMAP"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a24"><param name="Name" value="SMBusReadByteData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a26"><param name="Name" value="SMBusReadWordData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a22"><param name="Name" value="SMBusWriteByte"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a23"><param name="Name" value="SMBusWriteByteData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a25"><param name="Name" value="SMBusWriteWordData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a2"><param name="Name" value="USE_IRQ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a15"><param name="Name" value="XM01BC_BlockRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a16"><param name="Name" value="XM01BC_BlockWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a10"><param name="Name" value="XM01BC_Exit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a14"><param name="Name" value="XM01BC_GetStat"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a18"><param name="Name" value="XM01BC_Info"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a9"><param name="Name" value="XM01BC_Init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a17"><param name="Name" value="XM01BC_Irq"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a11"><param name="Name" value="XM01BC_Read"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a13"><param name="Name" value="XM01BC_SetStat"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a12"><param name="Name" value="XM01BC_Write"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a69"><param name="Name" value="__XM01BC_GetEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a67"><param name="Name" value="_XM01BC_GLOBNAME"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a70"><param name="Name" value="INT32_OR_64"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a72"><param name="Name" value="MDIS_PATH"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a71"><param name="Name" value="U_INT32_OR_64"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a32"><param name="Name" value="XM01BC_ATX_PWR_OK_MODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a55"><param name="Name" value="XM01BC_BLK_FWREV"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a56"><param name="Name" value="XM01BC_BLK_FWREV_EXT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a65"><param name="Name" value="XM01BC_BLK_FWREV_SIZE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a25"><param name="Name" value="XM01BC_ERR_LAST"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a27"><param name="Name" value="XM01BC_ERR_PWR_FLGS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a28"><param name="Name" value="XM01BC_ERR_REG_CLR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a26"><param name="Name" value="XM01BC_ERR_RST_RSN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a9"><param name="Name" value="XM01BC_ERRCNT_00"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a10"><param name="Name" value="XM01BC_ERRCNT_01"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a11"><param name="Name" value="XM01BC_ERRCNT_02"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a12"><param name="Name" value="XM01BC_ERRCNT_03"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a13"><param name="Name" value="XM01BC_ERRCNT_04"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a14"><param name="Name" value="XM01BC_ERRCNT_05"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a15"><param name="Name" value="XM01BC_ERRCNT_06"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a16"><param name="Name" value="XM01BC_ERRCNT_07"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a17"><param name="Name" value="XM01BC_ERRCNT_08"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a18"><param name="Name" value="XM01BC_ERRCNT_09"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a19"><param name="Name" value="XM01BC_ERRCNT_10"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a20"><param name="Name" value="XM01BC_ERRCNT_11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a21"><param name="Name" value="XM01BC_ERRCNT_12"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a22"><param name="Name" value="XM01BC_ERRCNT_13"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a23"><param name="Name" value="XM01BC_ERRCNT_14"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a39"><param name="Name" value="XM01BC_ERRCNT_15"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a40"><param name="Name" value="XM01BC_ERRCNT_16"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a41"><param name="Name" value="XM01BC_ERRCNT_17"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a42"><param name="Name" value="XM01BC_ERRCNT_18"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a43"><param name="Name" value="XM01BC_ERRCNT_19"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a44"><param name="Name" value="XM01BC_ERRCNT_20"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a45"><param name="Name" value="XM01BC_ERRCNT_21"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a46"><param name="Name" value="XM01BC_ERRCNT_22"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a47"><param name="Name" value="XM01BC_ERRCNT_23"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a48"><param name="Name" value="XM01BC_ERRCNT_24"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a49"><param name="Name" value="XM01BC_ERRCNT_25"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a50"><param name="Name" value="XM01BC_ERRCNT_26"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a51"><param name="Name" value="XM01BC_ERRCNT_27"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a52"><param name="Name" value="XM01BC_ERRCNT_28"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a53"><param name="Name" value="XM01BC_ERRCNT_29"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a54"><param name="Name" value="XM01BC_ERRCNT_30"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a24"><param name="Name" value="XM01BC_ERRCNT_CLR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a61"><param name="Name" value="XM01BC_EXT_PWR_OK_ERR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a60"><param name="Name" value="XM01BC_EXT_PWR_OK_IGN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a33"><param name="Name" value="XM01BC_EXT_PWR_OK_MODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a68"><param name="Name" value="XM01BC_GLOBNAME"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a38"><param name="Name" value="XM01BC_HW_VARIANT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a31"><param name="Name" value="XM01BC_LED_CTRL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a64"><param name="Name" value="XM01BC_NUM_ERR_CNTRS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a36"><param name="Name" value="XM01BC_NUM_ERRCNTRS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a37"><param name="Name" value="XM01BC_NUM_VOLTS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a30"><param name="Name" value="XM01BC_OPHRS_CNT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a29"><param name="Name" value="XM01BC_PWRCYCL_CNT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a59"><param name="Name" value="XM01BC_RESUME_FORMER"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a34"><param name="Name" value="XM01BC_RESUME_MODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a57"><param name="Name" value="XM01BC_RESUME_OFF"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a58"><param name="Name" value="XM01BC_RESUME_ON"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a63"><param name="Name" value="XM01BC_RST_IN_BLOCKED"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a62"><param name="Name" value="XM01BC_RST_IN_ENABLED"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a35"><param name="Name" value="XM01BC_RST_IN_MODE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a2"><param name="Name" value="XM01BC_SWCOLDRESET"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a1"><param name="Name" value="XM01BC_SWRESET"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a66"><param name="Name" value="XM01BC_VARIANT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a3"><param name="Name" value="XM01BC_VOLT_ACT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a5"><param name="Name" value="XM01BC_VOLT_HIGH"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a4"><param name="Name" value="XM01BC_VOLT_LOW"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a7"><param name="Name" value="XM01BC_VOLT_SIGCLR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a6"><param name="Name" value="XM01BC_VOLT_SIGSET"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a8"><param name="Name" value="XM01BC_VOLT_SVSTATE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a0"><param name="Name" value="XM01BC_WDOG_ARM"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERR_LAST"><param name="Name" value="XM01BC_ERR_LAST"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a25"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERR_PWR_FLGS"><param name="Name" value="XM01BC_ERR_PWR_FLGS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a27"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERR_REG_CLR"><param name="Name" value="XM01BC_ERR_REG_CLR"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a28"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERR_RST_RSN"><param name="Name" value="XM01BC_ERR_RST_RSN"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a26"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_00"><param name="Name" value="XM01BC_ERRCNT_00"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a9"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_01"><param name="Name" value="XM01BC_ERRCNT_01"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a10"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_02"><param name="Name" value="XM01BC_ERRCNT_02"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a11"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_03"><param name="Name" value="XM01BC_ERRCNT_03"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a12"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_04"><param name="Name" value="XM01BC_ERRCNT_04"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a13"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_05"><param name="Name" value="XM01BC_ERRCNT_05"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a14"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_06"><param name="Name" value="XM01BC_ERRCNT_06"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a15"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_07"><param name="Name" value="XM01BC_ERRCNT_07"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a16"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_08"><param name="Name" value="XM01BC_ERRCNT_08"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a17"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_09"><param name="Name" value="XM01BC_ERRCNT_09"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a18"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_10"><param name="Name" value="XM01BC_ERRCNT_10"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a19"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_11"><param name="Name" value="XM01BC_ERRCNT_11"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a20"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_12"><param name="Name" value="XM01BC_ERRCNT_12"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a21"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_13"><param name="Name" value="XM01BC_ERRCNT_13"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a22"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_14"><param name="Name" value="XM01BC_ERRCNT_14"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a23"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_15"><param name="Name" value="XM01BC_ERRCNT_15"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a39"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_16"><param name="Name" value="XM01BC_ERRCNT_16"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a40"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_17"><param name="Name" value="XM01BC_ERRCNT_17"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a41"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_18"><param name="Name" value="XM01BC_ERRCNT_18"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a42"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_19"><param name="Name" value="XM01BC_ERRCNT_19"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a43"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_20"><param name="Name" value="XM01BC_ERRCNT_20"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a44"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_21"><param name="Name" value="XM01BC_ERRCNT_21"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a45"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_22"><param name="Name" value="XM01BC_ERRCNT_22"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a46"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_23"><param name="Name" value="XM01BC_ERRCNT_23"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a47"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_24"><param name="Name" value="XM01BC_ERRCNT_24"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a48"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_25"><param name="Name" value="XM01BC_ERRCNT_25"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a49"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_26"><param name="Name" value="XM01BC_ERRCNT_26"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a50"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_27"><param name="Name" value="XM01BC_ERRCNT_27"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a51"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_28"><param name="Name" value="XM01BC_ERRCNT_28"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a52"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_29"><param name="Name" value="XM01BC_ERRCNT_29"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a53"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_30"><param name="Name" value="XM01BC_ERRCNT_30"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a54"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_ERRCNT_CLR"><param name="Name" value="XM01BC_ERRCNT_CLR"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a24"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_Exit"><param name="Name" value="XM01BC_Exit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a10"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_EXT_PWR_OK_ERR"><param name="Name" value="XM01BC_EXT_PWR_OK_ERR"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a61"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_EXT_PWR_OK_IGN"><param name="Name" value="XM01BC_EXT_PWR_OK_IGN"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a60"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_EXT_PWR_OK_MODE"><param name="Name" value="XM01BC_EXT_PWR_OK_MODE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a33"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_GetStat"><param name="Name" value="XM01BC_GetStat"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a14"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_GLOBNAME"><param name="Name" value="XM01BC_GLOBNAME"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a68"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_HW_VARIANT"><param name="Name" value="XM01BC_HW_VARIANT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a38"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_Info"><param name="Name" value="XM01BC_Info"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a18"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_Init"><param name="Name" value="XM01BC_Init"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a9"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_Irq"><param name="Name" value="XM01BC_Irq"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a17"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_LED_CTRL"><param name="Name" value="XM01BC_LED_CTRL"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a31"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_NUM_ERR_CNTRS"><param name="Name" value="XM01BC_NUM_ERR_CNTRS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a64"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_NUM_ERRCNTRS"><param name="Name" value="XM01BC_NUM_ERRCNTRS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a36"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_NUM_VOLTS"><param name="Name" value="XM01BC_NUM_VOLTS"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a37"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_OPHRS_CNT"><param name="Name" value="XM01BC_OPHRS_CNT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a30"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_PWRCYCL_CNT"><param name="Name" value="XM01BC_PWRCYCL_CNT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a29"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_Read"><param name="Name" value="XM01BC_Read"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a11"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_RESUME_FORMER"><param name="Name" value="XM01BC_RESUME_FORMER"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a59"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_RESUME_MODE"><param name="Name" value="XM01BC_RESUME_MODE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a34"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_RESUME_OFF"><param name="Name" value="XM01BC_RESUME_OFF"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a57"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_RESUME_ON"><param name="Name" value="XM01BC_RESUME_ON"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a58"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_RST_IN_BLOCKED"><param name="Name" value="XM01BC_RST_IN_BLOCKED"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a63"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_RST_IN_ENABLED"><param name="Name" value="XM01BC_RST_IN_ENABLED"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a62"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_RST_IN_MODE"><param name="Name" value="XM01BC_RST_IN_MODE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a35"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_SetStat"><param name="Name" value="XM01BC_SetStat"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a13"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_SWCOLDRESET"><param name="Name" value="XM01BC_SWCOLDRESET"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a2"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_SWRESET"><param name="Name" value="XM01BC_SWRESET"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a1"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_VARIANT"><param name="Name" value="XM01BC_VARIANT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a66"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_VOLT_ACT"><param name="Name" value="XM01BC_VOLT_ACT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a3"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_VOLT_HIGH"><param name="Name" value="XM01BC_VOLT_HIGH"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a5"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_VOLT_LOW"><param name="Name" value="XM01BC_VOLT_LOW"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a4"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_VOLT_SIGCLR"><param name="Name" value="XM01BC_VOLT_SIGCLR"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a7"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_VOLT_SIGSET"><param name="Name" value="XM01BC_VOLT_SIGSET"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a6"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_VOLT_SVSTATE"><param name="Name" value="XM01BC_VOLT_SVSTATE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a8"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_WDOG_ARM"><param name="Name" value="XM01BC_WDOG_ARM"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8h.html#a0"><param name="Name" value="xm01bc_drv.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="See Also" value="XM01BC_Write"><param name="Name" value="XM01BC_Write"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xm01bc__drv_8c.html#a12"><param name="Name" value="xm01bc_drv.c"></OBJECT>
+</UL>

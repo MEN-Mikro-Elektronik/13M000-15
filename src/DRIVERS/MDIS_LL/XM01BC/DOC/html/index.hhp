@@ -1,0 +1,42 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=XM01BC MDIS Driver
+
+[WINDOWS]
+main="XM01BC MDIS Driver","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x387e,,,,,,,,0
+
+[FILES]
+index.html
+files.html
+wdog__simp_8c-example.html
+wdog__test_8c-example.html
+xm01bc__ctrl_8c-example.html
+xm01bc__max_8dsc-example.html
+xm01bc__min_8dsc-example.html
+wdog_8h-source.html
+xm01bc__drv_8h-source.html
+wdog_8h.html
+wdog__simp_8c.html
+wdog__test_8c.html
+xm01bc__ctrl_8c.html
+xm01bc__doc_8c.html
+xm01bc__drv_8c.html
+xm01bc__drv_8h.html
+annotated.html
+functions.html
+functions_vars.html
+structLL__HANDLE.html
+dummy.html
+examples.html
+globals.html
+globals_func.html
+globals_vars.html
+globals_type.html
+globals_defs.html
+pages.html
