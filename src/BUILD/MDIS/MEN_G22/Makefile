@@ -24,7 +24,7 @@ ARCH := x86
 # e.g.: $(QNX_TARGET)/$(ARCH) if you want to install them
 # directly on your QNX target tree.
 
-QNX_TARGET_DIR := $(MEN_QNX_DIR)/qnx6/$(ARCH)
+QNX_TARGET_DIR := $(BSP_ROOT_DIR)/install/$(ARCH)
 
 # define the directory in which the executable binaries
 # are to be installed
@@ -58,7 +58,7 @@ USE_VME_SERVER := no
 # modules issue debug messages for troubleshooting. The message
 # display command is sloginfo.
 
-ALL_DBGS := dbg
+ALL_DBGS := nodbg
 
 ALL_DESC := system
 
@@ -74,6 +74,7 @@ ALL_USR_LIBS := \
 
 ALL_CORE_LIBS := \
 	CHAMELEON/COM/library.mak \
+	CHAMELEON/COM/library_io.mak \
 	\
 
 ALL_LL_TOOLS := \
