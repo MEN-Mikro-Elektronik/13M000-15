@@ -1,5 +1,10 @@
 ===== [ History of fileset ART/13M000-15/13M000-15 ] =====
 
+-----[ Release-1.9 ]-----
+[ 2016-02-11 by gv ]
+R: Example for G22 doesn't fit the integration of the BSP
+M: Set Install folder to BSP_ROOT_DIR/install
+
 -----[ Release-1.8 ]-----
 [ 2016-02-05 by gv ]
 R: 1: Unwanted FILESETS directory
