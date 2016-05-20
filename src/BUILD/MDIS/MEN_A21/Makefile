@@ -8,7 +8,7 @@
 # package for QNX, e.g. /MEN/QNX.
 # Note: FORWARD SLASHES '/' needed.
 
-MEN_QNX_DIR := C:/Users/gvarlet/Documents/DATA_MEN/Guillaume/QNX/BSP_A21/bsp-men-a021-src/src/lib/MDIS/
+MEN_QNX_DIR := $(BSP_ROOT_DIR)/src/lib/MDIS/
 
 ifndef QNX_SRC_DIR
 	QNX_SRC_DIR := $(MEN_QNX_DIR)/src
