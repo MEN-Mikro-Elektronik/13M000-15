@@ -39,9 +39,7 @@
 OSS_IRQ_STATE OSS_IrqMaskR( OSS_HANDLE *oss, OSS_IRQ_HANDLE* irqHandle )
 {
 	DBGWRT_1((DBH,"OSS_IrqMaskR\n"));
-
-	InterruptDisable();
-
+	InterruptLock( &(oss->intrSpinLock) );
 	return( 0 );
 }
 
@@ -56,8 +54,8 @@ void OSS_IrqRestore(
 	OSS_IRQ_HANDLE* irqHandle, 
 	OSS_IRQ_STATE oldState )
 {
-	DBGWRT_1((DBH,"OSS_IrqRestore \n"));
-	InterruptEnable();
+	DBGWRT_1((DBH,"OSS_IrqRestore\n"));
+	InterruptUnlock( &(oss->intrSpinLock) );
 }
 
 /**********************************************************************/

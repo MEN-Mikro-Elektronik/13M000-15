@@ -138,6 +138,9 @@ int32  OSS_Init(
 	/*--- request I/O privileges; otherwise IRQ functions will not work ---*/
 	ThreadCtl( _NTO_TCTL_IO, 0 );
 
+	/* initialize the interrupt spin lock */
+	memset( &(oss->intrSpinLock), 0, sizeof( intrspin_t ) );
+
 	/*--- attach to PCI server ---*/
 	if( (oss->pciHandle = pci_attach( 0 )) < 0 )
 		DBGWRT_ERR((DBH,"OSS_Init %s: can't attach to PCI server\n",instName));

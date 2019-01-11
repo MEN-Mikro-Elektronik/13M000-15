@@ -26,7 +26,8 @@
 #  define _OSS_INTERN_H
 
 #  ifdef __cplusplus
-      extern "C" {
+extern "C"
+{
 #  endif
 
 #include <stdio.h>
@@ -48,43 +49,44 @@
 #include <MEN/men_pci2vme.h>
 #include <MEN/men_libc.h>
 
-#include <MEN/dbg.h>        /* debug module */
+#include <MEN/dbg.h>            /* debug module */
 
 /*-----------------------------------------+
-|  TYPEDEFS                                |
-+------------------------------------------*/
-typedef struct {
-	char instName[40];			/* name of OSS instance */	
-	int32 dbgLevel;				/* debug level */
-	DBG_HANDLE *dbh;			/* debug handle */
-	int pciHandle;				/* PCI server attach handle */
+ |  TYPEDEFS                                |
+ +------------------------------------------*/
+typedef struct
+{
+    char instName[40];          /* name of OSS instance */
+    int32 dbgLevel;             /* debug level */
+    DBG_HANDLE *dbh;            /* debug handle */
+    int pciHandle;              /* PCI server attach handle */
     int vmeHandle;              /* VME server handle */
+    intrspin_t intrSpinLock;    /* Spin Lock for SMP critical sections */
     pid_t (*currentPid)( void );/* function to find out the pid of the */
-                                /*  current process */
+                                /* current process */
 } OSS_HANDLE;
 
 #include <MEN/oss.h>
 
 /*-----------------------------------------+
-|  DEFINES & CONST                         |
-+------------------------------------------*/
-#define DBG_MYLEVEL         oss->dbgLevel
-#define DBH 				oss->dbh
+ |  DEFINES & CONST                         |
+ +------------------------------------------*/
+#define DBG_MYLEVEL oss->dbgLevel
+#define DBH         oss->dbh
 
 #define OSS_ALARM_SIGNAL    SIGALRM     /* signal used to notify thread */
 
-
 /*-----------------------------------------+
-|  GLOBALS                                 |
-+------------------------------------------*/
+ |  GLOBALS                                 |
+ +------------------------------------------*/
 extern int oss_pci_slot_devnbrs[16];
 
 /*-----------------------------------------+
-|  PROTOTYPES                              |
-+------------------------------------------*/
+ |  PROTOTYPES                              |
+ +------------------------------------------*/
 
 #  ifdef __cplusplus
-      }
+}
 #  endif
 
 #endif/*_OSS_INTERN_H*/
