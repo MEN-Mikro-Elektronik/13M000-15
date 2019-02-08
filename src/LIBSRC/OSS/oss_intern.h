@@ -62,6 +62,7 @@ typedef struct
     int pciHandle;              /* PCI server attach handle */
     int vmeHandle;              /* VME server handle */
     intrspin_t intrSpinLock;    /* Spin Lock for SMP critical sections */
+    volatile int irqLockCount;  /* How many time the IRR lock function has been called*/
     pid_t (*currentPid)( void );/* function to find out the pid of the */
                                 /* current process */
 } OSS_HANDLE;

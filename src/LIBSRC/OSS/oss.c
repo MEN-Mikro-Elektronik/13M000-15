@@ -133,13 +133,14 @@ int32  OSS_Init(
 	oss->dbgLevel = OSS_DBG_DEFAULT;
     oss->currentPid = currentPid;
 
-	DBGWRT_1((DBH,"OSS_Init %s\n", instName));
+	DBGWRT_ERR((DBH,"OSS_Init %s 0x%p", instName, oss));
 
 	/*--- request I/O privileges; otherwise IRQ functions will not work ---*/
 	ThreadCtl( _NTO_TCTL_IO, 0 );
 
 	/* initialize the interrupt spin lock */
 	memset( &(oss->intrSpinLock), 0, sizeof( intrspin_t ) );
+	oss->irqLockCount = 0;
 
 	/*--- attach to PCI server ---*/
 	if( (oss->pciHandle = pci_attach( 0 )) < 0 )
