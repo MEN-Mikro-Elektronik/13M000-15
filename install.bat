@@ -114,6 +114,9 @@ for /F %%i in ('dir /B 13*-06') do (
 REM   git describe --dirty --long --tags --always >> %G_MdisInstallPath%\%G_logfile%
    xcopy /S /E /I DRIVERS\MDIS_LL\* %G_MdisInstallPath%\src\DRIVERS\MDIS_LL\ > NUL
    xcopy /S /E  INCLUDE\COM\MEN\* %G_MdisInstallPath%\src\INCLUDE\COM\MEN\ > NUL
+   if exist LIBSRC (
+      xcopy /S /E  LIBSRC\* %G_MdisInstallPath%\src\LIBSRC\ > NUL
+   )
    cd ..
 )
 
