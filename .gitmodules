@@ -1,6 +1,3 @@
-[submodule "src/DRIVERS/BBIS/D203"]
-	path = src/DRIVERS/BBIS/D203
-	url = ../../mc/bbis_drv_d203n.git
 [submodule "src/DRIVERS/BBIS/A21"]
 	path = src/DRIVERS/BBIS/A21
 	url = ../../mc/bbis_drv_a21.git
@@ -106,9 +103,6 @@
 [submodule "13M054-06"]
 	path = 13M054-06
 	url = ../13M054-06.git
-[submodule "src/TOOLS/FPGA_LOAD"]
-	path = src/TOOLS/FPGA_LOAD
-	url = ../mdis_tools_fpga_load.git
 [submodule "src/TOOLS/M_TMR"]
 	path = src/TOOLS/M_TMR
 	url = ../mdis_tools_m_tmr.git
