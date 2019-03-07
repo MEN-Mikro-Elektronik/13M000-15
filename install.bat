@@ -103,7 +103,6 @@ echo Copying folder LINUX to %G_MdisInstallPath% ...
 xcopy /S /E /I LINUX %G_MdisInstallPath%\LINUX > NUL
 echo Copying folder NT to %G_MdisInstallPath% ...
 xcopy /S /E /I NT %G_MdisInstallPath%\NT > NUL
-xcopy /S /E /I WINDOWS %G_MdisInstallPath%\NT > NUL
 
 REM ------------------------------------------------------------
 REM -- copy LL Drivers content, therefore ('dir /B 13*-06')
@@ -111,7 +110,6 @@ REM ------------------------------------------------------------
 for /F %%i in ('dir /B 13*-06') do (
    cd %%i
    echo Copying Low Level Driver %%i to %G_MdisInstallPath%\src\DRIVERS\MDIS_LL
-REM   git describe --dirty --long --tags --always >> %G_MdisInstallPath%\%G_logfile%
    xcopy /S /E /I DRIVERS\MDIS_LL\* %G_MdisInstallPath%\src\DRIVERS\MDIS_LL\ > NUL
    xcopy /S /E  INCLUDE\COM\MEN\* %G_MdisInstallPath%\src\INCLUDE\COM\MEN\ > NUL
    if exist LIBSRC (
@@ -121,19 +119,16 @@ REM   git describe --dirty --long --tags --always >> %G_MdisInstallPath%\%G_logf
 )
 
 
-REM ------------------------------------------------------------
-REM -- copy native Drivers content, therefore ('dir /B 13*-40')
-REM ------------------------------------------------------------
-for /F %%i in ('dir /B 13*-40') do (
-   cd %%i
-   echo Copying native Driver %%i to %G_MdisInstallPath%\src\DRIVERS\NATIVE
-REM   git describe --dirty --long --tags --always >> %G_MdisInstallPath%\%G_logfile%
-   xcopy /S /E /I DRIVERS\NATIVE\* %G_MdisInstallPath%\src\DRIVERS\NATIVE\ > NUL
-   REM -- INCLUDE/NATIVE/MEN folder exists not always e.g. 13M077-60. we just copy and ignore the error
-   xcopy /S /E INCLUDE\NATIVE\MEN\* %G_MdisInstallPath%\src\INCLUDE\NATIVE\MEN\ > NUL 2>&1
-   cd ..
+REM -----------------------------
+REM -- copy M077 Drivers content
+REM -----------------------------
+cd 13M077-40
+echo Copying native Driver 13M077-40 to %G_MdisInstallPath%\src\DRIVERS\
+xcopy /S /E /I DRIVERS\* %G_MdisInstallPath%\src\DRIVERS\ > NUL
+xcopy /S /E INCLUDE\NATIVE\MEN\* %G_MdisInstallPath%\src\INCLUDE\NATIVE\MEN\ > NUL 2>&1
+xcopy /S /E /I TOOLS\* %G_MdisInstallPath%\src\TOOLS\ > NUL
+cd ..
 )
-
 
 REM ------------------------------------------------------------
 REM -- copy XML files of all drivers, therefore ('dir /B 13*')

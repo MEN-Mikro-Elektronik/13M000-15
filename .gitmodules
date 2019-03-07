@@ -106,3 +106,12 @@
 [submodule "src/TOOLS/M_TMR"]
 	path = src/TOOLS/M_TMR
 	url = ../mdis_tools_m_tmr.git
+[submodule "src/DRIVERS/BBIS/D203"]
+	path = src/DRIVERS/BBIS/D203
+	url = ../mdis_drivers_bbis_d203n_com.git
+[submodule "src/TOOLS/WDOG"]
+	path = src/TOOLS/WDOG
+	url = ../mdis_tools_wdog.git
+[submodule "13M077-40"]
+	path = 13M077-40
+	url = ../13M077-40.git
