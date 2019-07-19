@@ -112,3 +112,18 @@
 [submodule "13M077-40"]
 	path = 13M077-40
 	url = ../13M077-40.git
+[submodule "13AD78-06"]
+	path = 13AD78-06
+	url = git@github.com:MEN-Mikro-Elektronik/13AD78-06.git
+[submodule "13P7C9-06"]
+	path = 13P7C9-06
+	url = git@github.com:MEN-Mikro-Elektronik/13P7C9-06.git
+[submodule "13PP04-06"]
+	path = 13PP04-06
+	url = git@github.com:MEN-Mikro-Elektronik/13PP04-06.git
+[submodule "13Z073-06"]
+	path = 13Z073-06
+	url = git@github.com:MEN-Mikro-Elektronik/13Z073-06.git
+[submodule "13Z075-06"]
+	path = 13Z075-06
+	url = git@github.com:MEN-Mikro-Elektronik/13Z075-06.git
